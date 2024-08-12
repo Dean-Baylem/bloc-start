@@ -1,0 +1,40 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "enhanced-block-building/hero-banner-block",
+	"version": "0.1.0",
+	"title": "Hero Banner Block",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Allows the user to create a custom Hero banner with the following options: background-image, filter, title, lead, anchor links.",
+	"example": {},
+	"supports": {
+		"html": false,
+		"color": {
+			"background": true,
+			"text": false
+		}
+	},
+	"textdomain": "hero-banner-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js",
+	"attributes": {
+		"heroBgId": {
+			"type": "number"
+		},
+		"heroBgUrl": {
+			"type": "string",
+			"source": "attribute",
+			"attribute": "src",
+			"selector": "img"
+		},
+		"heroTitle": {
+			"type": "string"
+		},
+		"heroLead": {
+			"type": "string"
+		}
+	}
+}

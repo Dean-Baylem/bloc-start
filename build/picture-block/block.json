@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "enhanced-block-building/picture-block",
+  "version": "0.1.0",
+  "title": "Picture Block",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Block that allows users to create a <picture> element with multiple sources and media selections",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "picture-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}
